@@ -6,22 +6,26 @@ data_dict = {
     "Maths":{
         "Ali":89,
         "Burhan":78,
-        "Mudassir":92
+        "Mudassir":92,
+        "Haris":49
     },
     "Physics":{
         "Ali":70,
         "Burhan":100,
-        "Mudassir":55
+        "Mudassir":55,
+        "Haris":70
     },
     "Computer Science":{
         "Ali":100,
         "Burhan":40,
-        "Mudassir":98
+        "Mudassir":98,
+        "Haris":100
     },
     "Biology":{
         "Ali":38,
         "Burhan":67,
-        "Mudassir":100
+        "Mudassir":100,
+        "Haris":28
     }
 }
 def mathmarks(x):

@@ -1,16 +1,12 @@
 student_dict = {}
 
-def dict_add(student_name,student_list):
-    n = 0
-    for x in student_list:
-        n += x
-    student_dict[student_name] = n
-
-def marks():
+def marks(student_name):
     physics = float(input("Enter marks attained in physics: \n"))
     chemistry = float(input("Enter marks attained in chemistry: \n"))
     math = float(input("Enter marks attained in maths: \n"))
-    return [physics,chemistry,math]
+    total = physics + chemistry + math
+    student_dict[student_name] = total
+    return total
 
 def get_position(stud1,stud2,stud3,stud4,stud5):
     all_marks = [stud1,stud2,stud3,stud4,stud5]
@@ -22,24 +18,19 @@ def get_position(stud1,stud2,stud3,stud4,stud5):
     return [first_position,second_position,third_position]
 
 print("Current student: Zeeshan, Roll no: 0")
-zeeshan_subject_marks = marks()
-dict_add("Zeeshan",zeeshan_subject_marks)
+zeeshan_subject_marks = marks("Zeeshan")
 
 print("Current student: Umair, Roll no: 1")
-umair_subject_marks = marks()
-dict_add("Umair",umair_subject_marks)
+umair_subject_marks = marks("Umair")
 
 print("Current student: Imran, Roll no: 2")
-imran_subject_marks = marks()
-dict_add("Imran",imran_subject_marks)
+imran_subject_marks = marks("Imran")
 
 print("Current student: Waleed, Roll no: 3")
-waleed_subject_marks = marks()
-dict_add("Waleed",waleed_subject_marks)
+waleed_subject_marks = marks("Waleed")
 
 print("Current student: Arsalan, Roll no: 4")
-arsalan_subject_marks = marks()
-dict_add("Arsalan",arsalan_subject_marks)
+arsalan_subject_marks = marks("Arsalan")
 
 position = get_position(student_dict["Zeeshan"],student_dict["Umair"],student_dict["Imran"],student_dict["Waleed"],student_dict["Arsalan"])
 student_list = list(student_dict)
